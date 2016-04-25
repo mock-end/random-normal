@@ -13,6 +13,7 @@
 
 ```
 $ npm install --save random-normal 
+```
 
 ## Usage
 
