@@ -1,0 +1,49 @@
+{
+  "name": "random-normal",
+  "version": "1.0.0",
+  "description": "Return a normally-distributed random variate.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint index.js",
+    "pretest": "npm run lint",
+    "test": "mocha -R spec",
+    "test:cov": "rm -rf ./test/coverage && istanbul cover _mocha --dir ./test/coverage -- -R spec",
+    "test:rpt": "npm run test:cov && coveralls < ./test/coverage/lcov.info",
+    "prepublish": "npm test"
+  },
+  "keywords": [
+    "normally",
+    "distributed",
+    "variate",
+    "random",
+    "randomly",
+    "randomize",
+    "chance",
+    "test",
+    "dice",
+    "mock"
+  ],
+  "author": {
+    "name": "bubkoo",
+    "email": "bubkoo.wy@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jshint": "^2.9.1",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mock-end/random-normal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mock-end/random-normal/issues"
+  },
+  "homepage": "https://github.com/mock-end/random-normal#readme",
+  "dependencies": {
+    "object-assign": "^4.0.1"
+  }
+}
